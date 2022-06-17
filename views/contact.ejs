@@ -1,0 +1,79 @@
+<% include partials/header.ejs %>
+
+<!--
+  contact.ejs
+  Student's name: Yuk Hong Ma
+  Student ID: 301210312
+  Date: June 4, 2022
+-->
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- Contact me form -->
+<div class="container">
+    <h2>Contact Me</h2>
+    <form action="">
+        <fieldset>
+        <legend>Please complete all the fields below:</legend>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="firstName">First Name</label>
+              </div>
+              <div class="col-75">
+                <input id="firstName" type="text" placeholder="Enter your first name...">
+                <p id="fnameError" class="error"><!-- id for displace error message --></p><br>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="lastName">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input id="lastName" type="text" placeholder="Enter your last name...">
+                <p id="lnameError" class="error"><!-- id for displace error message --></p><br>
+              </div>
+            </div>
+
+            
+            <div class="row">
+              <div class="col-25">
+                <label for="phone">Phone Number</label>
+              </div>
+              <div class="col-75">
+                <input id="phone" type="text" placeholder="Enter your phone number...">
+                <p id="phoneError" class="error"></p><br>
+              </div>
+            </div>
+
+              <div class="row">
+                <div class="col-25">
+                    <label for="mail">Email</label>
+                </div>
+                <div class="col-75">
+                    <input id="mail" type="text" placeholder="Enter your email...">
+                    <p id="mailError" class="error"></p><br>
+                </div>
+              </div>
+            <br>
+        </fieldset>
+    </form>
+
+    <p>
+        <button id="register"
+        type="submit">Submit</button>
+    </p>
+    
+    <p>
+        <button id="reset" type="reset">Reset</button>
+    </p>
+
+</div>
+
+<script src="/javascripts/assignment4.js"></script>
+
+<% include partials/footer.ejs %>
