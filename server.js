@@ -1,24 +1,20 @@
 #!/usr/bin/env node
 
-/*
-    server.js
-    Student's name: Yuk Hong Ma
-    Student ID: 301210312
-    Date: June 4, 2022
-*/
-
 /**
  * Module dependencies.
  */
 
-var app = require('./app');
-var debug = require('debug')('week03:server');
+var dbConfig = require('./config/db');
+var app = require('./config/app');
+var debug = require('debug')('week03-009:server');
 var http = require('http');
+const configurePassport = require('./config/passport');
 
 /**
  * Get port from environment and store in Express.
  */
 
+let db = dbConfig();
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
@@ -31,7 +27,7 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-
+const passport = configurePassport();
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
@@ -94,4 +90,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log(`Example app listening at http://localhost:${port}`)
 }
