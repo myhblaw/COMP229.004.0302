@@ -7,9 +7,9 @@
 
 console.log('Goes to the client side.');
 
-if(getTitle == "Business Contacts List View")
+if(getTitle == "Business Contacts List View" || "Update View")
 {
-    let deleteButtons = document.querySelectorAll('.btn-danger');
+    let deleteButtons = document.querySelectorAll('btn btn-danger btn-sm');
         
     for(button of deleteButtons)
     {
@@ -22,20 +22,6 @@ if(getTitle == "Business Contacts List View")
     }
 }
 
-if(getTitle == "Update View")
-{
-    let deleteButtons = document.querySelectorAll('.btn-danger');
-        
-    for(button of deleteButtons)
-    {
-        button.addEventListener('click', (event)=>{
-            if(!confirm("Are you sure?")) 
-            {
-                event.preventDefault();
-            }
-        });
-    }
-}
 
 if(getTitle == "Sign-up Form")
 {
