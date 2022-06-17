@@ -20,14 +20,14 @@ exports.projects = function(req, res, next) {
     });
 }
 
-exports.projects = function(req, res, next) {
+exports.services = function(req, res, next) {
     res.render('services', { 
       title: 'Services',
       userName: req.user ? req.user.username : '' 
     });
 }
 
-exports.projects = function(req, res, next) {
+exports.contact = function(req, res, next) {
     res.render('contact', { 
       title: 'Contact',
       userName: req.user ? req.user.username : '' 

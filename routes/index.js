@@ -35,12 +35,12 @@ router.get('/projects', controlerIndex.projects);
 // router.get('/services', function(req, res, next) {
 //   res.render('services', { title: 'Services', userName: 'Julio' });
 // });
-router.get('/services', controlerIndex.projects);
+router.get('/services', controlerIndex.services);
 
 // /* GET Contact page. */
 // router.get('/contact', function(req, res, next) {
 //   res.render('contact', { title: 'contact', userName: 'Julio' });
 // });
-router.get('/contact', controlerIndex.projects);
+router.get('/contact', controlerIndex.contact);
 
 module.exports = router;
