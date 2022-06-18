@@ -1,3 +1,10 @@
+/*
+    local.js
+    Student's name: Yuk Hong Ma
+    Student ID: 301210312
+    Date: June 17, 2022
+*/
+
 const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const User = require('../models/user');

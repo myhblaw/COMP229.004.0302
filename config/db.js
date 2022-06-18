@@ -1,3 +1,10 @@
+/*
+    db.js
+    Student's name: Yuk Hong Ma
+    Student ID: 301210312
+    Date: June 17, 2022
+*/
+
 // Do not expose your credentials in the code for Production Environment.
 let atlasDB = "mongodb+srv://appuser:QUUsy6OT4QAxKPuG@cluster004m2022.pzs5iou.mongodb.net/test";
 

@@ -1,3 +1,10 @@
+/*
+    user.js
+    Student's name: Yuk Hong Ma
+    Student ID: 301210312
+    Date: June 17, 2022
+*/
+
 let mongoose = require('mongoose');
 let crypto = require('crypto');
 let Schema = mongoose.Schema;

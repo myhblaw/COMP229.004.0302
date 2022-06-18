@@ -1,3 +1,10 @@
+/*
+    inventory.js
+    Student's name: Yuk Hong Ma
+    Student ID: 301210312
+    Date: June 17, 2022
+*/
+
 let mongoose = require('mongoose');
 
 // Create a model class

@@ -1,3 +1,10 @@
+/*
+    index.js
+    Student's name: Yuk Hong Ma
+    Student ID: 301210312
+    Date: June 17, 2022
+*/
+
 exports.home = function(req, res, next) {
     console.log('===> Original URL: ' + req.session.url);
     res.render('index', { 

@@ -1,3 +1,10 @@
+/*
+    app.js
+    Student's name: Yuk Hong Ma
+    Student ID: 301210312
+    Date: June 17, 2022
+*/
+
 let createError = require('http-errors');
 let express = require('express');
 let path = require('path');
